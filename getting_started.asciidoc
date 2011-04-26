@@ -20,7 +20,7 @@ http://www.methods.co.nz/asciidoc/index.html[AsciiDoc] is a text document format
 ====
 When you create a new page, one of the most important things to remember is to change the format from "Markdown" to "AscciDoc" in the "Edit Mode" drop down box.
 
-image:select_format.png[]
+image:./select_format.png[]
 ====
 
 === Plain Text
