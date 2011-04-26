@@ -16,9 +16,9 @@ This document covers:
 
 http://www.methods.co.nz/asciidoc/index.html[AsciiDoc] is a text document format for writing (among other things) books, ebooks, documentation, and ebooks. The main advantages of AsciiDoc is that it is easy to use and plays well with O'Reilly's publishing process.  It's similar to wiki markup -- if you can write a wikipedia article, then you're pretty much 90% of the way there.  This http://powerman.name/doc/asciidoc[Asciidoc cheat sheet] covers a lot of the nitty gritty, but the following sections will give you an overview of the markup you'll use most frequently. 
 
-To create a new AsciiDoc page, click the "New Page" button and change the "Edit Mode" from "Markdown" to "AscciDoc," as show in <<figure1>>:
+To create a new AsciiDoc page, click the "New Page" button and change the "Edit Mode" from "Markdown" to "AscciDoc," as show in <<edit-mode>>:
 
-[[figure1]]
+[[edit-mode]]
 .Change the "edit mode" to "AsciiDoc" when you create a new page
 image:select_format.png[scaledwidth="90%"]
 
@@ -157,6 +157,7 @@ It will look like this:
 === Cross references
 
 Not sure why these aren't working -- need to figure it out.
+
 == Figures and Code
 
 TBD
@@ -168,6 +169,11 @@ Main "home page," "book.asciidoc" is the main index into your document
 Treat this as a granular TOC or index page
 
 Don't put section headers in the "content" -- put them only in "book.asciidoc" with link out to each section. 
+
+
+[[doc-structure]]
+.Structure the overall document using headers and links
+image:doc_structure.png[scaledwidth="90%"]
 
 
 ----
@@ -212,11 +218,11 @@ Don't put section headers in the "content" -- put them only in "book.asciidoc" w
 == Tips and Tricks
 
 * Write in a text editor and paste the content into the Gollum wiki
+* Don't section headers inside your content sections -- put them in the "Home" file
 * Don't use inline formatting
 * Don't use footnotes
 * Don't  have an empty section
 * Don't  start an xref with a number or character
 * Don't  duplicate an xref name
-* Don't section headers inside your content sections -- put them in the "Home" file
 
 
