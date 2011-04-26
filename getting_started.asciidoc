@@ -72,6 +72,15 @@ Put code samples inside 4 consecutive minus signs ("-"), like this:
      }
  ----
 ----
+
+You can also use the AsciiDoc "include" macro to pull in code files (more on this in <<figures-and-code>> section):
+
+----
+ ----
+ include::code/example.c[]
+ ----
+----
+
 === Lists (Bullets and Numbered)
 
 
@@ -97,6 +106,7 @@ Put code samples inside 4 consecutive minus signs ("-"), like this:
 
 === Cross references
 
+[[figures-and-code]]
 == Figures and Code
 
 
