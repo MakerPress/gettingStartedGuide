@@ -62,7 +62,7 @@ turpis, sagittis ut tincidunt quis, suscipit in dolor. Maecenas ut mi mi.
 
 === Code
 
-Put code samples inside 4 consecutive minus signs ("-"), like this:
+Enclose code samples inside 4 consecutive minus signs ("-"), like this:
 
 ----
  ----
@@ -130,7 +130,7 @@ Here's how it will look:
 
 === Simple Tables
 
-Use the folloing format to create a table:
+Here's the basic format for creating tables:
 
 ----
 .An example table
