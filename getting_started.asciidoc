@@ -120,8 +120,6 @@ Here's how it will look:
 . Cras nec magna a lectus consequat varius.
 . Phasellus tempor lacinia neque, et scelerisque lectus luctus id.
 
-
-
 === Simple Tables
 
 Use the folloing format to create a table:
