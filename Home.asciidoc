@@ -1,0 +1,23 @@
+= Getting Started Guide
+
+[[intro]]
+
+== Intro to AsciiDoc
+
+[[asciidoc_intro]]
+
+== Structuring the Document
+
+[[doc-structure]]
+
+== Uploading External Files
+
+=== Figures
+
+[[upload_figures]]
+
+=== Code
+
+[[upload_code]]
+
+[[figures]]
