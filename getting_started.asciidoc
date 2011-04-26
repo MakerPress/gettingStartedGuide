@@ -1,0 +1,125 @@
+= Getting started guide
+
+Gollum wiki
+Github synching
+Overview of entire process
+
+This document covers:
+
+* Getting started with AsciiDoc
+* Adding Figures and Code examples
+* Structuring the document
+* Tips and tricks
+
+
+
+
+
+== AsciiDoc Overview
+
+http://www.methods.co.nz/asciidoc/index.html[AsciiDoc] is a text document format for writing (among other things) books, ebooks, documentation, and ebooks. The main advantages of AsciiDoc is that it is easy to use and plays well with O'Reilly's publishing process.  It's similar to wiki markup -- if you can write a wikipedia article, then you're pretty much 90% of the way there. 
+
+This http://powerman.name/doc/asciidoc[Asciidoc cheat sheet] covers a lot of the nitty gritty, but the following sections will give you an overview of the markup you'll use most frequently.  
+
+=== Plain Text
+
+Most of what you'll be doing is just writing plain old text. There's nothing special here -- just write what you have to say.  The only thing to remember is to NOT use any inline formatting -- like bold, italic, or others.  Just focus on the writing, not the appearance, and you'll do fine.
+
+=== Hyperlinks
+
+To add a hyperlink, just type the URL followed by the description in brackets.  Do not put a space between the brackets and the URL.  Here's an example:
+
+'https://github.com/odewahn/codebox2/blob/master/code/fractal_barnsley.pde[Fractal Example in Processing]
+
+=== Notes / Warnings
+
+=== Code
+
+=== Lists (Bullets and Numbered)
+
+
+----
+* Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+* Nulla blandit eros eget velit bibendum placerat.
+* Pellentesque id justo ultrices est pharetra suscipit.
+* Cras nec magna a lectus consequat varius.
+* Phasellus tempor lacinia neque, et scelerisque lectus luctus id.
+----
+
+----
+. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+. Nulla blandit eros eget velit bibendum placerat.
+. Pellentesque id justo ultrices est pharetra suscipit.
+. Cras nec magna a lectus consequat varius.
+. Phasellus tempor lacinia neque, et scelerisque lectus luctus id.
+----
+
+
+
+=== Simple Tables
+
+=== Cross references
+
+== Figures and Code
+
+
+
+== Structuring the document
+
+Main "home page," "book.asciidoc" is the main index into your document
+
+Treat this as a granular TOC or index page
+
+Don't put section headers in the "content" -- put them only in "book.asciidoc" with link out to each section. 
+
+
+----
+= Getting Started Guide
+
+[[intro]]
+
+== Chapter 1
+
+[[ch1-intro]]
+
+=== Chapter 1.A
+
+[[ch1-a]]
+
+=== Chapter 1.B
+
+[[ ch1-b]]
+
+==== Chapter 1.B.1
+
+[[c1-1-b-1]]
+
+==== Chapter 1.B.2
+
+[[c1-1-b-2]]
+
+
+== Chapter 2
+
+[[ch2-intro]]
+
+=== Chapter 2.A
+
+[[ch2-a]]
+
+=== Chapter 2.B
+
+[[ch2-b]]
+
+----
+
+== Tips and Tricks
+
+Write in a text editor and paste the content into the Gollum wiki
+Do not use inline formatting
+Do not have a "blank" section
+Do not start an xref with a number or character
+Do not use a duplicate xref name
+Do not use section headers inside your content sections
+
+
