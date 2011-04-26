@@ -14,13 +14,15 @@ This document covers:
 
 == AsciiDoc Overview
 
-http://www.methods.co.nz/asciidoc/index.html[AsciiDoc] is a text document format for writing (among other things) books, ebooks, documentation, and ebooks. The main advantages of AsciiDoc is that it is easy to use and plays well with O'Reilly's publishing process.  It's similar to wiki markup -- if you can write a wikipedia article, then you're pretty much 90% of the way there. 
-
-This http://powerman.name/doc/asciidoc[Asciidoc cheat sheet] covers a lot of the nitty gritty, but the following sections will give you an overview of the markup you'll use most frequently.  
+http://www.methods.co.nz/asciidoc/index.html[AsciiDoc] is a text document format for writing (among other things) books, ebooks, documentation, and ebooks. The main advantages of AsciiDoc is that it is easy to use and plays well with O'Reilly's publishing process.  It's similar to wiki markup -- if you can write a wikipedia article, then you're pretty much 90% of the way there.  This http://powerman.name/doc/asciidoc[Asciidoc cheat sheet] covers a lot of the nitty gritty, but the following sections will give you an overview of the markup you'll use most frequently.  
 
 === Plain Text
 
-Most of what you'll be doing is just writing plain old text. There's nothing special here -- just write what you have to say.  The only thing to remember is to NOT use any inline formatting -- like bold, italic, or others.  Just focus on the writing, not the appearance, and you'll do fine.
+Most of what you'll be doing is just writing plain old text. There's nothing special here -- just write what you have to say.  The only thing to remember is to NOT use any inline formatting -- like bold, italic, or others.  Here's an example:
+
+----
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean magna ante, vulputate nec pellentesque ut, vehicula sed tellus. Donec nibh ligula, malesuada at posuere eget, pellentesque non lectus. Suspendisse malesuada tempus facilisis. Praesent sem mi, dictum at ornare a, elementum faucibus mauris. Proin tellus turpis, sagittis ut tincidunt quis, suscipit in dolor. Maecenas ut mi mi. 
+----
 
 === Hyperlinks
 
