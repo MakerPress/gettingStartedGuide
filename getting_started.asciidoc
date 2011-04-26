@@ -92,7 +92,7 @@ Use asterisks ("*") to create bullets.  You can indent items by using multiple a
 * Phasellus tempor lacinia neque, et scelerisque lectus luctus id.
 ----
 
-Use periods (".") to create a numbered lists:
+Use periods (".") to create a ordered (i.e., "1, 2, 3, ...") lists:
 
 ----
 . Lorem ipsum dolor sit amet, consectetur adipiscing elit.
