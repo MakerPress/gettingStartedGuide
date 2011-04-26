@@ -56,6 +56,7 @@ turpis, sagittis ut tincidunt quis, suscipit in dolor. Maecenas ut mi mi.
 
 Put code samples inside 4 consecutive minus signs ("-"), like this:
 
+----
 '----
      if (x < X_MIN) {
         X_MIN = x;
@@ -70,7 +71,7 @@ Put code samples inside 4 consecutive minus signs ("-"), like this:
        Y_MAX = y;
      }
 '----
-
+----
 === Lists (Bullets and Numbered)
 
 
