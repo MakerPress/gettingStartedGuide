@@ -174,7 +174,8 @@ Creating more complex documents is simply a matter of sticthing together smaller
 .Structure the overall document using headers and links
 image:doc_structure.png[scaledwidth="90%"]
 
-So, how do you do this?  Basically, just put all your structural headings (defined by equal signs) in the home file, and then put internal links (which are the page name enclosed in double brackets).  The following sample should give you the basic idea. 
+So, how do you do this?  Basically, just put all your structural headings (defined by nesting equal signs at various depths) in the home file, and then put internal links (which are the page name enclosed in double brackets).  Note that you don't have to create each content page first -- you can simply create a link the link.  When you click on it, the new page will be created automatically.  The following sample should give you the basic idea.
+
 ----
 = Getting Started Guide
 
@@ -213,6 +214,8 @@ So, how do you do this?  Basically, just put all your structural headings (defin
 '[[ch2-b]]
 
 ----
+
+In addition to making the document more manageable, this approach also has the benefit of helping you think through the outline and structure of the document.
 
 == Tips and Tricks
 
