@@ -168,8 +168,7 @@ TBD
 
 == Structuring the document
 
-Createing more complex documents is simply a matter of sticthing together a number of smaller sub documents/  
-Treat this as a granular TOC or index page
+Creating more complex documents is simply a matter of sticthing together smaller sub documents.  While there are a variety of approaches, the one we're recommending right now (this is a pilot, after all, so this might change) is to use the special file "home.asciidoc" as a granular TOC or index page.  So, basically, you put all the section headers that describe the piece's structure, and then have links out to the content pages.  Keeping the structure in one place (home) will make it easier to move things around as you rewrite and edit.  
 
 Don't put section headers in the "content" -- put them only in "book.asciidoc" with link out to each section. 
 
