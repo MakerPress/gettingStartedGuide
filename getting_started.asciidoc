@@ -36,6 +36,13 @@ https://github.com/odewahn/codebox2/blob/master/code/fractal_barnsley.pde[Fracta
 
 === Notes / Warnings
 
+----
+[NOTE]
+====
+If you’re not seeing the initial three quick flashes of the LED, check your code to make certain you’re not using the ledWait variable to control the on-and-off lighting.  If you’re not getting a random wait after the three initial flashes (for example, if the delay is always the same number of seconds), make certain you included the last bit of code that resets the ledWait variable to 2000.
+====
+----
+
 === Code
 
 === Lists (Bullets and Numbered)
