@@ -35,6 +35,7 @@ https://github.com/odewahn/codebox2/blob/master/code/fractal_barnsley.pde[Fracta
 ----
 
 === Notes / Warnings
+If you need to add a note or sidebar, here's the format:
 
 ----
 [NOTE]
@@ -125,11 +126,12 @@ Don't put section headers in the "content" -- put them only in "book.asciidoc" w
 
 == Tips and Tricks
 
-Write in a text editor and paste the content into the Gollum wiki
-Do not use inline formatting
-Do not have a "blank" section
-Do not start an xref with a number or character
-Do not use a duplicate xref name
-Do not use section headers inside your content sections
+* Write in a text editor and paste the content into the Gollum wiki
+* Don't use inline formatting
+* Don't use footnotes
+* Don't  have an empty section
+* Don't  start an xref with a number or character
+* Don't  duplicate an xref name
+* Don't section headers inside your content sections -- put them in the "Home" file
 
 
