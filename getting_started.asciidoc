@@ -21,7 +21,11 @@ http://www.methods.co.nz/asciidoc/index.html[AsciiDoc] is a text document format
 Most of what you'll be doing is just writing plain old text. There's nothing special here -- just write what you have to say.  The only thing to remember is to NOT use any inline formatting -- like bold, italic, or others.  Here's an example:
 
 ----
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean magna ante, vulputate nec pellentesque ut, vehicula sed tellus. Donec nibh ligula, malesuada at posuere eget, pellentesque non lectus. Suspendisse malesuada tempus facilisis. Praesent sem mi, dictum at ornare a, elementum faucibus mauris. Proin tellus turpis, sagittis ut tincidunt quis, suscipit in dolor. Maecenas ut mi mi. 
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean magna ante, 
+vulputate nec pellentesque ut, vehicula sed tellus. Donec nibh ligula, malesuada 
+at posuere eget, pellentesque non lectus. Suspendisse malesuada tempus facilisis. 
+Praesent sem mi, dictum at ornare a, elementum faucibus mauris. Proin tellus 
+turpis, sagittis ut tincidunt quis, suscipit in dolor. Maecenas ut mi mi. 
 ----
 
 === Hyperlinks
@@ -40,7 +44,11 @@ If you need to add a note or sidebar, here's the format:
 ----
 [NOTE]
 ====
-If you’re not seeing the initial three quick flashes of the LED, check your code to make certain you’re not using the ledWait variable to control the on-and-off lighting.  If you’re not getting a random wait after the three initial flashes (for example, if the delay is always the same number of seconds), make certain you included the last bit of code that resets the ledWait variable to 2000.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean magna ante, 
+vulputate nec pellentesque ut, vehicula sed tellus. Donec nibh ligula, malesuada 
+at posuere eget, pellentesque non lectus. Suspendisse malesuada tempus facilisis. 
+Praesent sem mi, dictum at ornare a, elementum faucibus mauris. Proin tellus 
+turpis, sagittis ut tincidunt quis, suscipit in dolor. Maecenas ut mi mi. 
 ====
 ----
 
