@@ -81,7 +81,7 @@ You can also use the AsciiDoc "include" macro to pull in code files (more on thi
  ----
 ----
 
-=== Lists (Bullets and Numbered)
+=== Bulllet lists
 
 Use asterisks ("*") to create bullets.  You can indent items by using multiple asterisks:
 ----
@@ -92,15 +92,33 @@ Use asterisks ("*") to create bullets.  You can indent items by using multiple a
 * Phasellus tempor lacinia neque, et scelerisque lectus luctus id.
 ----
 
+The list will look like this:
+
+* Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+* Nulla blandit eros eget velit bibendum placerat.
+** Pellentesque id justo ultrices est pharetra suscipit.
+** Cras nec magna a lectus consequat varius.
+* Phasellus tempor lacinia neque, et scelerisque lectus luctus id.
+
+=== Numbered lists
+
 Use periods (".") to create a ordered (i.e., "1, 2, 3, ...") lists:
 
 ----
 . Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-. Nulla blandit eros eget velit bibendum placerat.
-. Pellentesque id justo ultrices est pharetra suscipit.
+.. Nulla blandit eros eget velit bibendum placerat.
+.. Pellentesque id justo ultrices est pharetra suscipit.
 . Cras nec magna a lectus consequat varius.
 . Phasellus tempor lacinia neque, et scelerisque lectus luctus id.
 ----
+
+Here's how it will look:
+
+. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+.. Nulla blandit eros eget velit bibendum placerat.
+.. Pellentesque id justo ultrices est pharetra suscipit.
+. Cras nec magna a lectus consequat varius.
+. Phasellus tempor lacinia neque, et scelerisque lectus luctus id.
 
 
 
