@@ -54,6 +54,25 @@ turpis, sagittis ut tincidunt quis, suscipit in dolor. Maecenas ut mi mi.
 
 === Code
 
+Put code samples inside 4 consecutive minus signs ("-"), like this:
+
+----
+'----
+     if (x < X_MIN) {
+        X_MIN = x;
+     }
+     if (x > X_MAX) {
+       X_MAX = x;
+     }
+     if (y < Y_MIN) {
+       Y_MIN = y;
+     }
+     if (y > Y_MAX) {
+       Y_MAX = y;
+     }
+'----
+----
+
 === Lists (Bullets and Numbered)
 
 
