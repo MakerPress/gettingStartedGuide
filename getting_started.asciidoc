@@ -29,6 +29,8 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean magna ante, vulp
 To add a hyperlink, just type the URL followed by the description in brackets.  Do not put a space between the brackets and the URL.  Here's an example:
 
 ----
+http://oreilly.com/[O'Reilly Media Website]
+http://www.makezine.com/[Makezine]
 https://github.com/odewahn/codebox2/blob/master/code/fractal_barnsley.pde[Fractal Example in Processing]
 ----
 
