@@ -6,13 +6,13 @@ This is a pilot for an experimental way to develop short-form (less than 100 pag
 * You write in AsciiDoc, an open source text format developed by http://www.methods.co.nz/asciidoc/[Stuart Rackham] (more on this in a bit).  Every time you save a page, it gets logged into a git repository, so it's always under version control.  (We can grant you access to your repo -- just ask!)
 * When you're ready, we suck the AsciiDoc into our publishing toolchain, convert it to DocBook (our native format), and then push it out through various channels.  You can read a bit about this at http://www.apeth.net/matt/iosbooktoolchain.html[Matt Neuberg's blog], where he describes how he wrote his "Programming iOS" book.
 
-So, why bother with this, you ask?  Mostly, we're trying to create a more appealing process that will let you get you writing as quickly as possible, not mucking around with a bunch of tools.  The cool thing about AsciiDoc, Gollum, and git (and github!) is that they can hide away a lot of the complexities of the publishing process, letting you (hopefully!) focus on the what you want to say, not how it will be published.  
+So, why bother with this, you ask?  Mostly, we're trying to create a more appealing process that will let you get you writing as quickly as possible, not mucking around with a bunch of tools.  The cool thing about AsciiDoc, Gollum, and git (and github!) is that they can hide away a lot of the complexities of the publishing process, letting you (hopefully!) focus on the what you want to say.  
 
 This document covers:
 
 * Getting started with AsciiDoc
 * Adding Figures and Code examples
-* Structuring the document
+* Structuring your overall document
 * Tips and tricks
 
 
@@ -168,17 +168,14 @@ TBD
 
 == Structuring the document
 
-Main "home page," "book.asciidoc" is the main index into your document
-
+Createing more complex documents is simply a matter of sticthing together a number of smaller sub documents/  
 Treat this as a granular TOC or index page
 
 Don't put section headers in the "content" -- put them only in "book.asciidoc" with link out to each section. 
 
-
 [[doc-structure]]
 .Structure the overall document using headers and links
 image:doc_structure.png[scaledwidth="90%"]
-
 
 ----
 = Getting Started Guide
