@@ -1,8 +1,12 @@
 = Getting started guide
 
-Gollum wiki
-Github synching
-Overview of entire process
+This is a pilot for an experimental way to develop short-form (less than 100 pages or so) content for O'Reilly.  Here's how it works:
+
+* You write in AsciiDoc, an open source text format developed by http://www.methods.co.nz/asciidoc/[Stuart Rackham] (more on this in a bit). 
+* We supply you with a https://github.com/github/gollum[Gollum] instance, the awesome, git-powered wiki from the folks at GitHub.  You enter write your document like you would a wiki, and you can share it with friends, editors, and other people you think might help.
+* When you're ready, we suck the AsciiDoc into our publishing toolchain, convert it to DocBook (our native format), and then push it out through various channels (print on demand, ebook, kindle, iTunes, and so forth).  You can read a bit about this at http://www.apeth.net/matt/iosbooktoolchain.html[Matt Neuberg's blog].
+
+So, why would you bother with this, and what do 
 
 This document covers:
 
