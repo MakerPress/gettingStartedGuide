@@ -12,9 +12,6 @@ This document covers:
 * Tips and tricks
 
 
-
-
-
 == AsciiDoc Overview
 
 http://www.methods.co.nz/asciidoc/index.html[AsciiDoc] is a text document format for writing (among other things) books, ebooks, documentation, and ebooks. The main advantages of AsciiDoc is that it is easy to use and plays well with O'Reilly's publishing process.  It's similar to wiki markup -- if you can write a wikipedia article, then you're pretty much 90% of the way there. 
@@ -29,7 +26,9 @@ Most of what you'll be doing is just writing plain old text. There's nothing spe
 
 To add a hyperlink, just type the URL followed by the description in brackets.  Do not put a space between the brackets and the URL.  Here's an example:
 
-'https://github.com/odewahn/codebox2/blob/master/code/fractal_barnsley.pde[Fractal Example in Processing]
+----
+https://github.com/odewahn/codebox2/blob/master/code/fractal_barnsley.pde[Fractal Example in Processing]
+----
 
 === Notes / Warnings
 
