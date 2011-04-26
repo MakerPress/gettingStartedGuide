@@ -156,10 +156,10 @@ It will look like this:
 
 === Cross references
 
-[[figures-and-code]]
+Not sure why these aren't working -- need to figure it out.
 == Figures and Code
 
-
+TBD
 
 == Structuring the document
 
