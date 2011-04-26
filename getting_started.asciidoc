@@ -12,17 +12,17 @@ This document covers:
 * Tips and tricks
 
 
-== AsciiDoc Overview
+== Creating a page in AsciiDoc
 
 http://www.methods.co.nz/asciidoc/index.html[AsciiDoc] is a text document format for writing (among other things) books, ebooks, documentation, and ebooks. The main advantages of AsciiDoc is that it is easy to use and plays well with O'Reilly's publishing process.  It's similar to wiki markup -- if you can write a wikipedia article, then you're pretty much 90% of the way there.  This http://powerman.name/doc/asciidoc[Asciidoc cheat sheet] covers a lot of the nitty gritty, but the following sections will give you an overview of the markup you'll use most frequently. 
 
-[NOTE]
-====
-When you create a new page, one of the most important things to remember is to change the format from "Markdown" to "AscciDoc" in the "Edit Mode" drop down box.
+To create a new AsciiDoc page, click the "New Page" button and change the "Edit Mode" from "Markdown" to "AscciDoc," as show in <<figure1>>:
 
+[[figure1]]
+.Change the "edit mode" to "AsciiDoc" when you create a new page
 image:select_format.png[scaledwidth="90%"]
 
-====
+Once you've created a page, you can try out the following markup:
 
 === Plain Text
 
