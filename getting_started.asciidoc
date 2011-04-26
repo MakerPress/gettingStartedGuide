@@ -168,14 +168,13 @@ TBD
 
 == Structuring the document
 
-Creating more complex documents is simply a matter of sticthing together smaller sub documents.  While there are a variety of approaches, the one we're recommending right now (this is a pilot, after all, so this might change) is to use the special file "home.asciidoc" as a granular TOC or index page.  So, basically, you put all the section headers that describe the piece's structure, and then have links out to the content pages.  Keeping the structure in one place (home) will make it easier to move things around as you rewrite and edit.  
-
-Don't put section headers in the "content" -- put them only in "book.asciidoc" with link out to each section. 
+Creating more complex documents is simply a matter of sticthing together smaller sub documents.  While there are a variety of approaches, the one we're recommending right now (this is a pilot, after all, so this might change) is to use the special file "home.asciidoc" as a granular TOC or index page.  So, basically, you put all the section headers that describe the piece's structure, and then have links out to the content pages.  Keeping the structure in one place (home) will make it easier to move things around as you rewrite and edit.  The idea looks something like <<doc-structure>>.
 
 [[doc-structure]]
 .Structure the overall document using headers and links
 image:doc_structure.png[scaledwidth="90%"]
 
+So, how do you do this?  Basically, just put all your structural headings (defined by equal signs) in the home file, and then put internal links (which are the page name enclosed in double brackets).  The following sample should give you the basic idea. 
 ----
 = Getting Started Guide
 
