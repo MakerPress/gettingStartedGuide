@@ -83,12 +83,12 @@ You can also use the AsciiDoc "include" macro to pull in code files (more on thi
 
 === Lists (Bullets and Numbered)
 
-
+Use asterisks ("*") to create bullets.  You can indent items by using multiple asterisks:
 ----
 * Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 * Nulla blandit eros eget velit bibendum placerat.
-* Pellentesque id justo ultrices est pharetra suscipit.
-* Cras nec magna a lectus consequat varius.
+** Pellentesque id justo ultrices est pharetra suscipit.
+** Cras nec magna a lectus consequat varius.
 * Phasellus tempor lacinia neque, et scelerisque lectus luctus id.
 ----
 
