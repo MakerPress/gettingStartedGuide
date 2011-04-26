@@ -19,5 +19,3 @@
 === Code
 
 [[upload_code]]
-
-[[figures]]
