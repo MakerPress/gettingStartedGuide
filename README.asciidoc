@@ -303,7 +303,7 @@ In addition to making the document more manageable, this approach also has the b
 == Tips and Tricks
 
 * Write in a text editor and paste the content into the Gollum wiki
-* Don't section headers inside your content sections -- put them in the "Home" file
+* Don't put section headers inside your content sections -- put them in the "Home" file
 * Don't use inline formatting
 * Don't use footnotes
 * Don't have an empty section
