@@ -2,7 +2,7 @@
 
 This is a pilot for an experimental way to develop short-form (less than 100 pages or so) content for O'Reilly.  Here's how it works:
 
-* We supply you with a https://github.com/github/gollum[Gollum] instance, the awesome, git-powered wiki from the folks at http://www.github.com[GitHub].  You enter write your document like you would a wiki, and you can share it with friends, editors, and other people you think might help.
+* *COMING SOON*. We supply you with a https://github.com/github/gollum[Gollum] instance, the awesome, git-powered wiki from the folks at http://www.github.com[GitHub].  You enter write your document like you would a wiki, and you can share it with friends, editors, and other people you think might help.
 * You write in AsciiDoc, an open source text format developed by http://www.methods.co.nz/asciidoc/[Stuart Rackham] (more on this in a bit).  Every time you save a page, it gets logged into a git repository, so it's always under version control.  (We can grant you access to your repo -- just ask!)
 * When you're ready, we suck the AsciiDoc into our publishing toolchain, convert it to DocBook (our native format), and then push it out through various channels.  You can read a bit about this at http://www.apeth.net/matt/iosbooktoolchain.html[Matt Neuberg's blog], where he describes how he wrote his "Programming iOS" book.
 
@@ -11,22 +11,28 @@ So, why bother with this, you ask?  Mostly, we're trying to create a more appeal
 This document covers:
 
 * Getting started with AsciiDoc
-* Adding Figures and Code examples
+* Working with figures and cross-references (XREFS)
+* Putting code examples on GitHub 
 * Structuring your overall document
 * Tips and tricks
 
 
-== Creating a page in AsciiDoc
+== AsciiDoc Quickstart
 
 http://www.methods.co.nz/asciidoc/index.html[AsciiDoc] is a text document format for writing (among other things) books, ebooks, documentation, and ebooks. The main advantages of AsciiDoc is that it is easy to use and plays well with O'Reilly's publishing process.  It's similar to wiki markup -- if you can write a wikipedia article, then you're pretty much 90% of the way there.  This http://powerman.name/doc/asciidoc[Asciidoc cheat sheet] covers a lot of the nitty gritty, but the following sections will give you an overview of the markup you'll use most frequently. 
 
-To create a new AsciiDoc page, click the "New Page" button and change the "Edit Mode" from "Markdown" to "AscciDoc," as show in <<edit-mode>>:
+[NOTE]
+====
+You can get the complete nitty gritty on how O'Reilly uses AsciiDoc from our official https://prod.oreilly.com/external/tools/docbook/prod/trunk/samples/r_and_d/asciidoc/[AsciiDoc guidelines].  You'll need to enter "guest" as the username; leave the password blank, and then navigate to the "pdf" directory to download the docs.  In addition, the https://prod.oreilly.com/external/tools/docbook/prod/trunk/samples/r_and_d/asciidoc/chapter.asc[sample chapter with markup] is particularly helpful in explaining how things work.
+====
 
-[[edit-mode]]
-.Change the "edit mode" to "AsciiDoc" when you create a new page
-image:select_format.png[scaledwidth="90%"]
+You can create and edit AsciiDoc in any text editor, and then paste it into the wiki to push it into our system.  If you're on Windows, you can use Notepad (or anything you want, really).  If you're on a Mac, you can use TextEdit, TextMate, or any of a number of choices.  The important thing is that you use the AsciiDoc markup.
 
-Once you've created a page, you can try out the following markup:
+Here are some links to AsciiDoc books that you can use for reference:
+
+* https://github.com/odewahn/codebox3[Codebox: Adventures with Processing]
+* https://github.com/odewahn/mintduino[MintDuino Project Book]
+* https://github.com/odewahn/best_of_radar_data[Best of Radar: Data]
 
 === Plain Text
 
@@ -93,7 +99,7 @@ You can also use the AsciiDoc "include" macro to pull in code files (more on thi
  ----
 ----
 
-=== Bulllet lists
+=== Bullet lists
 
 Use asterisks ("*") to create bullets.  You can indent items by using multiple asterisks:
 ----
@@ -158,21 +164,97 @@ It will look like this:
 |7  | 8  | 9
 |=============
 
-=== Cross references
 
-Not sure why these aren't working -- need to figure it out.
+== Figures and cross-references (XREFS)
 
-== Figures and Code
+To add a figure to your project, just place the figure file in the "attachments" directory and add a link, like this:
 
-TBD
+====
+ [[figure1]]
+ .Put the caption here
+
+ image::attachments/figure1.png[scaledwidth=90%]
+====
+
+Figures can "float" throughout the document and may not be on the same page you expect them to be.  For this reason, saying things like "This figure..." or "The figure below..." might confuse the reader, since the figure may very well be on a totally separate page once the document is rendered.  For this reason,  all figures must have an accompanying cross-reference.  
+
+Cross-references (XREFS) allow you to link to other sections in the document, and are most commonly used to refer to figures.  XREFS have two elements: an anchor, which is what you're linking _to_, and a reference, which is where your linking _from_ in your text.  Anchor links are denoted by double brackets.  Reference links are denoted with double angle-brackets.  
+
+Here's a sample of how you'd reference a figure:
+
+====
+   You can see an example of foo in <<foo-figure>>.  Notice how beautiful the foo is.  Mmmmm, foo.
+
+   [[foo-figure]]
+   .Here is the caption for foo
+
+   image::attachments/some_figure_related_to_foo.png[scaledwidth=90%]
+====
+
+== Code samples
+
+We recommend that you place all code samples on GitHub.  This makes it easy for you, and more importantly, your readers, to pull down the code and fix it.  Take a look at Matthew Russell's https://github.com/ptwobrussell/Mining-the-Social-Web[Mining the Social Web] to see how well this works when done consistently.
+
+[NOTE]
+====
+If you don't want to put your code on GitHub, you can simply place the listing files in the "attachments" directory and then use the "include" macro to pull it in, like this:
+
+ ----
+ include::attachments/my_program.py[]
+ ----
+
+====
+
+Matthew's included a lot of niceties on the landing page, like marketing text, praise quotes, JPEG of the front cover, a plea not to steal the book, etc. We really like the way he's set up the main page, but we're certainly not mandating authors include all this material, or that they adhere to any formal strictures. If you prefer to do something much more bare-bones, that's totally fine, too. See the Jonathan LeBlanc's  https://github.com/jcleblanc/programming-social-applications[Programming Social Applications] for something far more simple.
+
+Note that Jonathan's actually organized his code in directories by chapter, which we think is a good idea if there are a lot of code examples and/or chapters in the book. It makes it easier for readers to find things. Matthew Russell's solution for enhancing findability/navigability was to add an https://github.com/ptwobrussell/Mining-the-Social-Web/wiki/Numbered-examples[Examples Listing] to his GitHub wiki.
+
+In terms of linking to GitHub content from the book, we'd recommend you do the following:
+
+=== Add preface text 
+
+Add the following text to the "Using Code Examples" section of the Preface:
+
+====
+The code examples in the following chapters are available for download at GitHub at 
+https://github.com/<username>/<booktitle>/ -- the official code repository for this book. You are encouraged to 
+monitor this repository for the latest bug-fixed code as well as extended examples by the author and the rest of 
+the social coding community."
+====
+
+=== Link out to your examples in the text
+
+For every code listing that's in both GitHub and the book, add a hyperlink in the book to the corresponding code in GitHub. If the code is in a formal example, we recommend putting the link in the Example title (otherwise, you may want to add the link to the preceding body text). Here's an example of the AsciiDoc markup you can use (note the backslash after "microformats" in the URL, which is necessary to escape the double underscore so it is properly translated to DocBook):
+
+====
+ [[EXTEST]]
+ .Scraping XFN content from a web page
+  (https://github.com/ptwobrussell/Mining-the-Social-Web/blob/master/python_code/microformats\__xfn_scrape.py[microformats__xfn_scrape.py])
+ ====
+ ----
+ import sys
+ import urllib2
+ import HTMLParser
+ ...
+ ----
+ ====
+====
+
+Note that for the hyperlink node text, we've used just the filename of the code, so that the full URL isn't displayed in the Web PDF.  The elemnts will appear as in <<code-on-github>>.
+
+[[code-on-github]]
+.Here's how references to your code on GitHub will appear in text.
+
+image::attachments/example_with_github_link.png[scaledwidth="90%"]
+
 
 == Structuring the document
 
-Creating more complex documents is simply a matter of sticthing together smaller sub documents.  While there are a variety of approaches, the one we're recommending right now (this is a pilot, after all, so this might change) is to use the special file "home.asciidoc" as a granular TOC or index page.  So, basically, you put all the section headers that describe the piece's structure, and then have links out to the content pages.  Keeping the structure in one place (home) will make it easier to move things around as you rewrite and edit.  The idea looks something like <<doc-structure>>.
+Creating more complex documents is simply a matter of stitching together smaller sub documents.  While there are a variety of approaches, the one we're recommending right now (this is a pilot, after all, so this might change) is to use the special file "home.asciidoc" as a granular TOC or index page.  So, basically, you put all the section headers that describe the piece's structure, and then have links out to the content pages.  Keeping the structure in one place (home) will make it easier to move things around as you rewrite and edit.  The idea looks something like <<doc-structure>>.
 
 [[doc-structure]]
 .Structure the overall document using headers and links
-image:doc_structure.png[scaledwidth="90%"]
+image::attachments/doc_structure.png[scaledwidth="90%"]
 
 So, how do you do this?  Basically, just put all your structural headings (defined by nesting equal signs at various depths) in the home file, and then put internal links (which are the page name enclosed in double brackets).  Note that you don't have to create each content page first -- you can simply create a link the link.  When you click on it, the new page will be created automatically.  The following sample should give you the basic idea.
 
