@@ -178,7 +178,7 @@ Do not use the JPEG file format for saving screenshots, as they work poorly in p
 
 Figures can "float" throughout the document and may not be on the same page you expect them to be. For this reason, saying things like "This figure..." or "The figure below..." might confuse the reader, since the figure may very well be on a totally separate page once the document is rendered.  For this reason, all figures must have an accompanying cross-reference.  
 
-Cross-references (XREFS) allow you to link to other sections in the document, and are most commonly used to refer to figures.  XREFS have two elements: an anchor, which is what you're linking _to_, and a reference, which is where your linking _from_ in your text. Anchor links are denoted by double brackets. Reference links are denoted with double angle-brackets.  
+Cross-references (XREFS) allow you to link to other sections in the document, and are most commonly used to refer to figures.  XREFS have two elements: an anchor, which is what you're linking _to_, and a reference, which is where you're linking _from_ in your text. Anchor links are denoted by double brackets. Reference links are denoted with double angle-brackets.  
 
 Here's a sample of how you'd reference a figure:
 
