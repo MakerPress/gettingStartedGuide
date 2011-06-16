@@ -216,10 +216,11 @@ In terms of linking to GitHub content from the book, we'd recommend you do the f
 Add the following text to the "Using Code Examples" section of the Preface:
 
 ====
-The code examples in the following chapters are available for download at GitHub at 
-https://github.com/<username>/<booktitle>/ -- the official code repository for this book. You are encouraged to 
-monitor this repository for the latest bug-fixed code as well as extended examples by the author and the rest of 
-the social coding community."
+ The code examples in the following chapters are available for download at GitHub at 
+ https://github.com/<username>/<booktitle>/ -- the official code repository for this 
+ book. You are encouraged to  monitor this repository for the latest bug-fixed code as 
+ well as extended examples by the author and the rest of 
+ the social coding community."
 ====
 
 === Link out to your examples in the text
@@ -259,41 +260,41 @@ image::attachments/doc_structure.png[scaledwidth="90%"]
 So, how do you do this?  Basically, just put all your structural headings (defined by nesting equal signs at various depths) in the home file, and then put internal links (which are the page name enclosed in double brackets).  Note that you don't have to create each content page first -- you can simply create a link the link.  When you click on it, the new page will be created automatically.  The following sample should give you the basic idea.
 
 ----
-= Getting Started Guide
+ = Getting Started Guide
 
-'[[intro]]
+ [[intro]]
 
-== Chapter 1
+ == Chapter 1
 
-'[[ch1-intro]]
+ [[ch1-intro]]
 
-=== Chapter 1.A
+ === Chapter 1.A
 
-'[[ch1-a]]
+ [[ch1-a]]
+ 
+ === Chapter 1.B
 
-=== Chapter 1.B
+ [[ ch1-b]]
 
-'[[ ch1-b]]
+ ==== Chapter 1.B.1
 
-==== Chapter 1.B.1
+ [[c1-1-b-1]]
 
-'[[c1-1-b-1]]
+ ==== Chapter 1.B.2
 
-==== Chapter 1.B.2
+ [[c1-1-b-2]]
 
-'[[c1-1-b-2]]
+ == Chapter 2
 
-== Chapter 2
+ [[ch2-intro]]
 
-'[[ch2-intro]]
+ === Chapter 2.A
 
-=== Chapter 2.A
+ [[ch2-a]]
 
-'[[ch2-a]]
+ === Chapter 2.B
 
-=== Chapter 2.B
-
-'[[ch2-b]]
+ [[ch2-b]]
 
 ----
 
@@ -308,5 +309,6 @@ In addition to making the document more manageable, this approach also has the b
 * Don't  have an empty section
 * Don't  start an xref with a number or character
 * Don't  duplicate an xref name
+* To generate a PDF from this repo, use this command: "a2x -fpdf --fop  --no-xmllint README.asciidoc"
 
 
