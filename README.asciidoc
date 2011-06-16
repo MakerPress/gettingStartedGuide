@@ -167,7 +167,7 @@ It will look like this:
 
 == Figures and cross-references (XREFS)
 
-To add a figure to your project, just place the figure file in the "attachments" directory and add a link, like this:
+Do not use the JPEG file format for saving screenshots, as they work poorly in print.  Please use GIF, TIF, PNG, or BMP.  To add a figure to your project, just place the figure file in the "attachments" directory and add a link, like this:
 
 ====
  [[figure1]]
