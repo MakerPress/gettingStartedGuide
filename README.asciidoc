@@ -6,7 +6,7 @@ This is a pilot for an experimental way to develop short-form (less than 100 pag
 * You write in AsciiDoc, an open source text format developed by http://www.methods.co.nz/asciidoc/[Stuart Rackham] (more on this in a bit).  Every time you save a page, it gets logged into a git repository, so it's always under version control.  (We can grant you access to your repo -- just ask!)
 * When you're ready, we suck the AsciiDoc into our publishing toolchain, convert it to DocBook (our native format), and then push it out through various channels.  You can read a bit about this at http://www.apeth.net/matt/iosbooktoolchain.html[Matt Neuberg's blog], where he describes how he wrote his "Programming iOS" book.
 
-So, why bother with this, you ask?  Mostly, we're trying to create a more appealing process that will get you writing as quickly as possible, not mucking around with a bunch of tools.  The cool thing about AsciiDoc, Gollum, and git (and github!) is that they can help ease a lot of the complexities of the publishing process, letting you (hopefully!) focus on the what you want to say.  
+So, why bother with this, you ask?  Mostly, we're trying to create a more appealing process that will get you writing as quickly as possible, not mucking around with a bunch of tools.  The cool thing about AsciiDoc, Gollum, and git (and GitHub!) is that they can help ease a lot of the complexities of the publishing process, letting you (hopefully!) focus on the what you want to say.
 
 This document covers:
 
@@ -34,17 +34,19 @@ Here are some links to AsciiDoc books that you can use for reference:
 * https://github.com/odewahn/mintduino[MintDuino Project Book]
 * https://github.com/odewahn/best_of_radar_data[Best of Radar: Data]
 
-=== Plain Text
+=== Inline Elements
 
-Most of what you'll be doing is just writing plain old text. There's nothing special here -- just write what you have to say.  The only thing to remember is to NOT use any inline formatting -- like bold, italic, or others. Here's an example:
+Here's some some _italic_ and some +monospaced+ (aka "constant-width" or "CW") text. 
 
-----
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean magna ante, 
-vulputate nec pellentesque ut, vehicula sed tellus. Donec nibh ligula, malesuada 
-at posuere eget, pellentesque non lectus. Suspendisse malesuada tempus facilisis. 
-Praesent sem mi, dictum at ornare a, elementum faucibus mauris. Proin tellus 
-turpis, sagittis ut tincidunt quis, suscipit in dolor. Maecenas ut mi mi. 
-----
+Backticks can also be used for literal (CW) text, for example: `ls -al`
+
+[WARNING]
+====
+Using inlines in AsciiDoc can be tricky.
+
+Delimiters may not be interpreted as intended if they don't abut whitespace on both sides; the fix for this is to double them up, as explained under http://www.methods.co.nz/asciidoc/userguide.html#X52[``Constrained and
+Unconstrained Quotes''] in the AsciiDoc User Guide.  For example, compare how these render in the PDF: _+foo+ bar_ vs. _++foo++ bar_
+====
 
 === Hyperlinks
 
@@ -56,19 +58,36 @@ http://www.makezine.com/[Makezine]
 https://github.com/odewahn/codebox2/blob/master/code/fractal_barnsley.pde[Fractal Example in Processing]
 ----
 
-=== Notes / Warnings
-If you need to add a note or sidebar, here's the format:
+=== Notes, Warnings, and Sidebars
+If you need to add a note or warning, here's the format:
 
-----
 [NOTE]
-====
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean magna ante, 
-vulputate nec pellentesque ut, vehicula sed tellus. Donec nibh ligula, malesuada 
-at posuere eget, pellentesque non lectus. Suspendisse malesuada tempus facilisis. 
-Praesent sem mi, dictum at ornare a, elementum faucibus mauris. Proin tellus 
-turpis, sagittis ut tincidunt quis, suscipit in dolor. Maecenas ut mi mi. 
-====
-----
+===============================
+O'Reilly Animal books traditionally make no distinction between the
+DocBook +<note>+, +<tip>+, and +<important>+ elements.
+===============================
+
+.Add a Title
+[WARNING] .Add a Title
+===============================
+O'Reilly Animal books traditionally make no distinction between the
+DocBook +<warning>+ and +<caution>+ elements.
+===============================
+
+Here's a Sidebar:
+
+.Titled vs. Untitled Blocks
+****
+O'Reilly house style generally uses titles only on formal blocks
+(figures, tables, examples, and sidebars in particular). Although
+AsciiDoc supports optional titles on many other blocks, these
+generally are not appropriate for O'Reilly books.
+
+Conversely, _omitting_ a title from a sidebar is generally not
+conformant to O'Reilly style. If you have questions about whether
+content belongs in an sidebar vs. admonition vs. quote or other
+element, please consult with your editor.
+****
 
 === Code
 
@@ -190,6 +209,14 @@ Here's a sample of how you'd reference a figure:
 
    image::attachments/some_figure_related_to_foo.png[scaledwidth=90%]
 ====
+
+To generate a cross-reference, use this syntax:
+
+----
+<<ID>>
+----
+
+where `ID` is the anchor or BlockID of the target, which you place in double square-brackets above that block.
 
 == Code samples
 
