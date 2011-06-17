@@ -61,6 +61,7 @@ https://github.com/odewahn/codebox2/blob/master/code/fractal_barnsley.pde[Fracta
 === Notes, Warnings, and Sidebars
 If you need to add a note or warning, here's the format:
 
+----
 [NOTE]
 ===============================
 O'Reilly Animal books traditionally make no distinction between the
@@ -73,9 +74,11 @@ DocBook +<note>+, +<tip>+, and +<important>+ elements.
 O'Reilly Animal books traditionally make no distinction between the
 DocBook +<warning>+ and +<caution>+ elements.
 ===============================
+----
 
 Here's a Sidebar:
 
+----
 .Titled vs. Untitled Blocks
 ****
 O'Reilly house style generally uses titles only on formal blocks
@@ -88,6 +91,7 @@ conformant to O'Reilly style. If you have questions about whether
 content belongs in an sidebar vs. admonition vs. quote or other
 element, please consult with your editor.
 ****
+----
 
 === Code
 
