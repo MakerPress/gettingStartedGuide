@@ -2,14 +2,6 @@
 
 This is a pilot for an experimental way to develop short-form (less than 100 pages or so) content for O'Reilly.  Here's how it works:
 
-////
-Need to add something about our expectations that relate to the 50% royalty rate they are getting:
-
-* The text will not get much, if any editing. The authors need to familiarize themselves with http://oreilly.com/oreilly/author/stylesheet.html
-* The figures will only get a light touch, so we need SVG for diagrams, and high quality photos.
-* we need to put this in the contract going forward.
-////
-
 * *COMING SOON*. We supply you with a https://github.com/github/gollum[Gollum] instance, the awesome, git-powered wiki from the folks at http://www.github.com[GitHub].  You write/edit your document like you would a wiki, and you can share it with friends, editors, and other people you think might help.
 * You write in AsciiDoc, an open source text format developed by http://www.methods.co.nz/asciidoc/[Stuart Rackham] (more on this in a bit).  Every time you save a page, it gets logged into a git repository, so it's always under version control.  (We can grant you access to your repo -- just ask!)
 * When you're ready, we suck the AsciiDoc into our publishing toolchain, convert it to DocBook (our native format), and then push it out through various channels.  You can read a bit about this at http://www.apeth.net/matt/iosbooktoolchain.html[Matt Neuberg's blog], where he describes how he wrote his "Programming iOS" book.
@@ -44,9 +36,17 @@ Here are some links to AsciiDoc books that you can use for reference:
 
 === Inline Elements
 
-Here's some some _italic_ and some +monospaced+ (aka "constant-width" or "CW") text. 
+Here's some some _italic_ and some +monospaced+ (aka "constant-width" or "CW") text:
 
-Backticks can also be used for literal (CW) text, for example: `ls -al`
+----
+Here's some some _italic_ and some +monospaced+ (aka "constant-width" or "CW") text:
+----
+
+Backticks can also be used for literal (CW) text, for example: `ls -al`:
+
+----
+Backticks can also be used for literal (CW) text, for example: `ls -al`:
+----
 
 [WARNING]
 ====
@@ -343,7 +343,6 @@ In addition to making the document more manageable, this approach also has the b
 
 * Write in a text editor and paste the content into the Gollum wiki
 * Don't put section headers inside your content sections -- put them in the "Home" file
-* Don't use inline formatting
 * Don't use footnotes
 * Don't have an empty section
 * Don't start an xref with a number or character
