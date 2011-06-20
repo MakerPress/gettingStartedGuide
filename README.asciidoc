@@ -285,7 +285,7 @@ Note that for the hyperlink node text, we've used just the filename of the code,
 [[code-on-github]]
 .Here's how references to your code on GitHub will appear in text.
 
-image::attachments/example_with_github_link.png[scaledwidth="90%"]
+image::https://github.com/MakerPress/gettingStartedGuide/raw/master/attachments/example_with_github_link.png[scaledwidth="90%"]
 
 
 == Structuring the document
