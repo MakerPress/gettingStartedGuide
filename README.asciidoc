@@ -294,7 +294,7 @@ Creating more complex documents is simply a matter of stitching together smaller
 
 [[doc-structure]]
 .Structure the overall document using headers and links
-image::attachments/doc_structure.png[scaledwidth="90%"]
+image::https://github.com/MakerPress/gettingStartedGuide/raw/master/attachments/doc_structure.png[scaledwidth="90%"]
 
 So, how do you do this? Basically, just put all your structural headings (defined by nesting equal signs at various depths) in the home file, and then put internal links (which are the page name enclosed in double brackets). Note that you don't have to create each content page first -- you can simply create a link the link. When you click on it, the new page will be created automatically. The following sample should give you the basic idea.
 
