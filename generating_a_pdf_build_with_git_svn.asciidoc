@@ -55,10 +55,9 @@ git commit -a -m"orm:asciidoc"
 git svn dcommit
 ----
 
-This initiates the PDF build process through a set of SVN hooks.  To actually get your pdf, do this:
+This initiates the PDF build process through a set of SVN hooks.  After a few minutes, you can retrieve the pdf with these 2 commands:
 
 ----
+git svn rebase
 git svn fetch
 ----
-
-NB: there is some weird versioning thing about pulling in generated files from the repo into the git repo.  I need to figure this out.
