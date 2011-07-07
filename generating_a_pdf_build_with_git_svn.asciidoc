@@ -1,0 +1,55 @@
+= Using SVN and Git to initiate a PDF build
+
+This doc describes how to use git+svn to interoperate between git and our SVN repo.  It also describes how to initiate a buld from git and retrieve the built files.
+
+== Get the most recent version from the SVN repo
+
+mkdir tmp
+cd tmp
+svn checkout --username "odewahn@oreilly.com" "https://prod.oreilly.com/external/authors/books/9781449311827/current/" 
+cd current
+svn log
+
+
+This will produce a log file where you can get a bunch of revision numbers with the most recent revisions starting at the top, like this:
+
+----
+macodewahn:current odewahn$ svn log
+r349256 | dcps@oreilly.com | 2011-07-06 11:16:06 -0400 (Wed, 06 Jul 2011) | 1 line
+...
+----
+
+Make a note of this revision, which in the example is "349256."
+
+== Initialize a new "git svn" repo
+
+Next, initialize the new git repo:
+
+git svn init --username "odewahn@oreilly.com" "https://prod.oreilly.com/external/authors/books/9781449311827/current/"
+git svn fetch -r 349256
+
+== Do your stuff in git
+
+Then, once you've got the git repo checked out, you can add files and commit like you normally do.  (But, don't do any branching, because that really screws up SVN!)
+
+
+== Commit to SVN and generate a PDF
+
+When you're ready to build a PDF, do this:
+
+----
+git commit -a -m"orm:asciidoc"
+git svn dcommit
+----
+
+This initiates the build.  To actually get a pdf, do this:
+
+== Retrieve builds from SVN
+
+Once the PDFs are gennerated, you can retrieve them through git using this command:
+
+----
+git svn fetch
+----
+
+NB: there is some weird versioning thing about pulling in generated files from the repo into the git repo.  I need to figure this out.
