@@ -26,8 +26,10 @@ Make a note of this revision, which in the example is "349256."
 
 Next, initialize the new git repo:
 
+----
 git svn init --username "odewahn@oreilly.com" "https://prod.oreilly.com/external/authors/books/9781449311827/current/"
 git svn fetch -r 349256
+----
 
 == Do your stuff in git
 
