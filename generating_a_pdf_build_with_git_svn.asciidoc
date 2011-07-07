@@ -33,23 +33,29 @@ git svn fetch -r 349256
 
 == Do your stuff in git
 
-Then, once you've got the git repo checked out, you can add files and commit like you normally do.  (But, don't do any branching, because that really screws up SVN!)
+Congrats, you're now using git.  You can add files, edit, and commit like you normally do.  The one ting to consider: be careful when you're using git's branching facilities.  git branches should only be on your local machine. As long as you don't push any of those with git svn you should be able to do all the normal git branch and merge stuff locally with svn even knowing about it.
 
+Other than that, go to!
 
 == Commit to SVN and generate a PDF
 
-When you're ready to build a PDF, do this:
+Use this command when you're ready to save your files to the SVN repo:
+
+----
+git svn dcommit
+----
+
+
+== Generate a PDF 
+
+If you want to also trigger a pdf build a PDF, just add the "orm:asciidoc" string in your commit message and then dcommit, like this:
 
 ----
 git commit -a -m"orm:asciidoc"
 git svn dcommit
 ----
 
-This initiates the build.  To actually get a pdf, do this:
-
-== Retrieve builds from SVN
-
-Once the PDFs are gennerated, you can retrieve them through git using this command:
+This initiates the PDF build process through a set of SVN hooks.  To actually get your pdf, do this:
 
 ----
 git svn fetch
