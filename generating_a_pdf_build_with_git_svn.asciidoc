@@ -2,6 +2,14 @@
 
 This doc describes how to use git+svn to interoperate between git and our SVN repo.  It also describes how to initiate a buld from git and retrieve the built files.
 
+== Install git+svn
+
+If you don't have it already, you'll need to install git+svn.  Here's the command in Ubuntu:
+
+----
+sudo apt-get install git-svn
+----
+
 == Get the most recent revision number from the SVN repo
 
 ----
