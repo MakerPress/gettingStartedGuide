@@ -2,14 +2,15 @@
 
 This doc describes how to use git+svn to interoperate between git and our SVN repo.  It also describes how to initiate a buld from git and retrieve the built files.
 
-== Get the most recent version from the SVN repo
+== Get the most recent revision number from the SVN repo
 
+----
 mkdir tmp
 cd tmp
 svn checkout --username "odewahn@oreilly.com" "https://prod.oreilly.com/external/authors/books/9781449311827/current/" 
 cd current
 svn log
-
+----
 
 This will produce a log file where you can get a bunch of revision numbers with the most recent revisions starting at the top, like this:
 
