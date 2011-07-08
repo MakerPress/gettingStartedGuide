@@ -12,10 +12,12 @@ sudo apt-get install git-svn
 
 == Get the most recent revision number from the SVN repo
 
+The basic process is to create the directory that you want to use git+svn in, checkout the svn repo and determine the correct revision number, use git+svn to initialize the git repo, and then delete the safari repo.  Here's an example for how to set up the a git+svn "javascript" repo for the SVN repo https://prod.oreilly.com/external/authors/books/9781449311889/current/.
+
 ----
-mkdir tmp
-cd tmp
-svn checkout --username "odewahn@oreilly.com" "https://prod.oreilly.com/external/authors/books/9781449311827/current/" 
+mkdir javascript
+cd javascript
+svn checkout --username "odewahn@oreilly.com" "https://prod.oreilly.com/external/authors/books/9781449311889/current/" 
 cd current
 svn log
 ----
@@ -35,8 +37,10 @@ Make a note of this revision, which in the example is "349256."
 Next, initialize the new git repo:
 
 ----
+cd ..
 git svn init --username "odewahn@oreilly.com" "https://prod.oreilly.com/external/authors/books/9781449311827/current/"
 git svn fetch -r 349256
+rm -rf current
 ----
 
 == Do your stuff in git
