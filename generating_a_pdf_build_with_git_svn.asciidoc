@@ -30,7 +30,11 @@ r349256 | dcps@oreilly.com | 2011-07-06 11:16:06 -0400 (Wed, 06 Jul 2011) | 1 li
 ...
 ----
 
-Make a note of this revision, which in the example is "349256."
+Make a note of this revision, which in the example is "349256." Next, delete the current directory that the previous steps created:
+
+----
+rm -rf current
+----
 
 == Initialize a new "git svn" repo
 
@@ -40,7 +44,7 @@ Next, initialize the new git repo:
 cd ..
 git svn init --username "odewahn@oreilly.com" "https://prod.oreilly.com/external/authors/books/9781449311827/current/"
 git svn fetch -r 349256
-rm -rf current
+git rebase --onto remotes/git-svn --root master
 ----
 
 == Do your stuff in git
