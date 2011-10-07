@@ -1,0 +1,7 @@
+* gsg
+* gsg_asciidoc_quickstart
+* gsg_code_samples
+* gsg_editing_locally
+* gsg_figures_and_xrefs
+* gsg_project_structure
+* gsg_tips_and_tricks
