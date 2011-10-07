@@ -11,8 +11,8 @@ So, why bother with this, you ask?  Mostly, we're trying to create a more appeal
 This document covers:
 
 * [[Signing in with OpenID]]
-* [[Getting started with AsciiDoc | asciidoc_quickstart]]
-* [[Attaching figures and code samples | figures_and_code]]
+* [[Getting started with AsciiDoc | gsg_asciidoc_quickstart]]
+* [[Attaching figures and code samples | gsg_figures_and_code]]
 * [[Putting code examples on GitHub | gsg_code_samples.asciidoc ]]
-* [[Creating an EPUB/PDF | create_epub]]
+* [[Creating an EPUB/PDF | gsg_create_epub]]
 * [[Tips and tricks | gsg_tips_and_tricks.asciidoc]]
