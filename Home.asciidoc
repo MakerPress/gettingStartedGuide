@@ -10,8 +10,9 @@ So, why bother with this, you ask?  Mostly, we're trying to create a more appeal
 
 This document covers:
 
+* [[Signing in with OpenID]]
 * [[Getting started with AsciiDoc | asciidoc_quickstart]]
-* [[Working with figures and cross-references (XREFS) | gsg_figures_and_xrefs.asciidoc]]
+* [[Attaching figures and code samples | figures_and_code]]
 * [[Putting code examples on GitHub | gsg_code_samples.asciidoc ]]
-* [[Structuring your overall document | gsg_project_structure.asciidoc]]
+* [[Creating an EPUB/PDF | create_epub]]
 * [[Tips and tricks | gsg_tips_and_tricks.asciidoc]]
