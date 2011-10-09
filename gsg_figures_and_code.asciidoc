@@ -14,3 +14,4 @@ To include code sample, use AsciiDoc's _include_ macro to pull in the listing.  
 include ::attachments/my_program.py[]
 ----
 ...........................
+Note that in general, it's better to link out to listing files by linking them directly to GitHub.  This is explained in another section.
