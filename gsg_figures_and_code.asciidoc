@@ -9,8 +9,8 @@ Figures can "float" throughout the document and may not be on the same page you 
 
 *For Code Sample* +
 To include code sample, use AsciiDoc's _include_ macro to pull in the listing.  Be sure to embed it within the *code* delimiters.  Here's an example:
-====
+...........................
 \\ ----
 \\ include::attachments/my_program.py[]
 \\ ----
-====
+...........................
