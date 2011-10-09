@@ -13,6 +13,6 @@ This document covers:
 * [[Signing in with OpenID]]
 * [[Getting started with AsciiDoc | gsg_asciidoc_quickstart]]
 * [[Attaching figures and code samples | gsg_figures_and_code]]
-* [[Putting code examples on GitHub | gsg_code_samples.asciidoc ]]
+* [[Putting code examples on GitHub | gsg_code_samples]]
 * [[Creating an EPUB/PDF | gsg_create_epub]]
-* [[Tips and tricks | gsg_tips_and_tricks.asciidoc]]
+* [[Tips and tricks | gsg_tips_and_tricks]]
