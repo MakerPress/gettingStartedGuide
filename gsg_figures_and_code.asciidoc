@@ -1,0 +1,1 @@
+Two steps are required to include figures and code samples in your project.  First, you must upload the file to the project by using the "Attach
