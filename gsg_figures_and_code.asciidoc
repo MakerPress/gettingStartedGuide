@@ -1,3 +1,4 @@
-To include figures and code samples in your project, you first upload the file to the project by clicking the "Upload Attachment" button at the upper right-hand corner of the screen.  This will place the file in a directory called _attachments_.  Then, you create a link to the file you just uploaded.
+To include figures and code samples in your project, you first upload the file to the project by clicking the "Upload Attachment" button at the upper right-hand corner of the screen.  This will place the file in a directory called _attachments_.  Then, you create a link to the file you just uploaded, like this:
 
-The uploading step is 
+*For figures* +
+Use AsciiDoc's  _image_ macro to create a reference to the figure  It will look something like this:
