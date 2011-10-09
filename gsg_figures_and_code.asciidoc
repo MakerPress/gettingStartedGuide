@@ -2,3 +2,10 @@ To include figures and code samples in your project, you first upload the file t
 
 *For figures* +
 Use AsciiDoc's  _image_ macro to create a reference to the figure  It will look something like this:
+====
+ [[figure1]]
+ .Put the caption here
+
+ image::attachments/figure1.png[scaledwidth=90%]
+====
+Figures can "float" throughout the document and may not be on the same page you expect them to be. For this reason, saying things like "This figure..." or "The figure below..." might confuse the reader, since the figure may very well be on a totally separate page once the document is rendered.  For this reason, all figures must have an accompanying cross-reference.  
