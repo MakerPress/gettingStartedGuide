@@ -1,6 +1,6 @@
 == Signing In With OpenID
 
-The editing environment requires authentication using http://openid.net/[OpenID].  There are many, many providers, ranging from Goolge, Flickr, myOpenID, to Verisign.  Each provides a distint identifier that you use to identify yourself.  This section describes use the Google+ OpenID service.  
+The editing environment requires authentication using http://openid.net/[OpenID].  There are many, many providers, ranging from Goolge, Flickr, myOpenID, to Verisign.  Each provides a distinct identifier that you use to identify yourself.  This section describes use the Google+ OpenID service.  
 
 [NOTE]
 ====
@@ -14,7 +14,7 @@ Unlike other providers, Google+ does not require you to provide a distinct ident
 
 image::attachments/gsg_openid_signin.png[scaledwidth="90%"]
 
-To begin the authentication process, enter "*https://www.google.com/accounts/o8/id*" into the "Identity URL" box and press "Log In."  You will be redirected to the sign in page for your Google Account, as shown in <<google_signin>>. 
+To begin the authentication process, enter "https://www.google.com/accounts/o8/id" into the "Identity URL" box and press "Log In."  You will be redirected to the sign in page for your Google Account, as shown in <<google_signin>>. 
 
 [[google_signin]]
 .The OpenID form redirects you to the login page for Google Accounts, where you can enter your Google+ login credentials.
