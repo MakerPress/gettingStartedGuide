@@ -14,7 +14,7 @@ Unlike other providers, Google+ does not require you to provide a distinct ident
 
 image::attachments/gsg_openid_signin.png[scaledwidth="90%"]
 
-To begin the authentication process, enter "https://www.google.com/accounts/o8/id" into the "Identity URL" box.  Please enter the text exactly as given.
+To begin the authentication process, enter "*https://www.google.com/accounts/o8/id*" into the "Identity URL" box and press 
 
 
 
