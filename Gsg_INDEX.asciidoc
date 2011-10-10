@@ -1,4 +1,4 @@
-* Home
+* gsg_intro
 * gsg_authentication
 * gsg_asciidoc_quickstart
 * gsg_figures_and_code
