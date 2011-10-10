@@ -1,3 +1,4 @@
+
 == Signing In With OpenID
 
 The editing environment requires authentication using http://openid.net/[OpenID].  There are many, many providers, ranging from Goolge, Flickr, myOpenID, to Verisign.  Each provides a distinct identifier that you use to identify yourself.  This section describes use the Google+ OpenID service.  
