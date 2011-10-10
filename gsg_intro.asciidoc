@@ -1,4 +1,4 @@
-=Getting Started with Gollum
+= Getting Started with Gollum
 
 This is a pilot for an experimental way to develop short-form (less than 100 pages or so) content for O'Reilly.  Here's how it works:
 
