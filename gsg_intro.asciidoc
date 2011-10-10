@@ -21,3 +21,5 @@ This document covers:
 * Downloading your archive
 * Editing locally
 * Tips and tricks
+
+So, here come the rest of the sections.
