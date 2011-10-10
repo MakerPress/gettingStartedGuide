@@ -1,7 +1,10 @@
 * gsg
+* gsg_authentication
 * gsg_asciidoc_quickstart
+* gsg_figures_and_code
 * gsg_code_samples
+* gsg_build_project
+* gsg_debug
+* gsg_download_archive
 * gsg_editing_locally
-* gsg_figures_and_xrefs
-* gsg_project_structure
 * gsg_tips_and_tricks
