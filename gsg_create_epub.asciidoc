@@ -5,6 +5,8 @@ To produce an EPUB or PDF, you must create a page that assembles the individual 
 
 Once you create an "_INDEX" file, you'll see a button called "Build Project" appear at the top right hand corner of the screen.
 
+image::attachments/gsg_build_project.png[scaledwidth="90%"]
+
 
 
 
