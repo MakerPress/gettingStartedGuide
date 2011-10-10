@@ -24,7 +24,7 @@ image::attachments/gsg_google_signin.png[scaledwidth="90%"]
 Enter your username and password and then click "Sign In."  Assuming you entered everything correctly, you'll see the "Home" page of your editing environment.  You'll find your OpenID listed at the page footer, as shown in <<openid_in_footer>>.
 
 [[openid_in_footer]]
-.Once you're logged in, your OpenID will appear at the bottom of every page..
+.The OpenID appears at the bottom of every page..
 
 image::attachments/openid_in_footer.png[scaledwidth="90%"]
 
