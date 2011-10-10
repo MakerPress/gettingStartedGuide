@@ -1,0 +1,6 @@
+The editing environment requires authentication using http://openid.net/[OpenID].  There are many, many providers, ranging from Goolge, Flickr, myOpenID, to Verisign.  This section describes how to log in using Google+.  
+
+  
+
+
+https://www.google.com/accounts/o8/id
