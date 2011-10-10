@@ -14,7 +14,7 @@ This document covers:
 * [[Getting started with AsciiDoc | gsg_asciidoc_quickstart]]
 * [[Attaching figures and code samples | gsg_figures_and_code]]
 * [[Putting code examples on GitHub | gsg_code_samples]]
-* [[Building an EPUB of your project | gsg_create_epub]]
+* [[Building the project | gsg_create_epub]]
 * [[Downloading your archive | gsg_download_archive]]
 * [[Editing locally | gsg_editing_locally]]
 * [[Tips and tricks | gsg_tips_and_tricks]]
