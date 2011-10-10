@@ -3,7 +3,7 @@ To produce an EPUB or PDF, you must create a page that assembles the individual 
 * End with the string "_INDEX".  This tells the system that it's a special page used to build a final document.
 * Contain a bulleted list of files to include in the order in which they are to appear.  You reference each of these by page name, which you can find by clicking the "All Pages" button.  Note that you do not have to have an "include::" at the beginning, or a ".asciidoc[]" at the end.  These will be added automatically.
 
-Here, for example, is the _INDEX listing for this "Getting Started Guide":
+Here, for example, are the contents for _gsg_INDEX_ which lists all the files that should be included in this guide:
 
 ----
 * gsg
@@ -14,7 +14,11 @@ Here, for example, is the _INDEX listing for this "Getting Started Guide":
 * gsg_project_structure
 * gsg_tips_and_tricks
 ----
-Once you create an "_INDEX" file, you'll see a button called "Build Project" appear at the top right hand corner of the screen.
+
+Once you create an "_INDEX" file like this, you'll see a button called "Build Project" appear at the top right hand corner of the screen, as shown in <<build_project>>.
+
+[[build_project]]
+.The "Build Project" button appears on _INDEX pages.
 
 image::attachments/gsg_build_project.png[scaledwidth="90%"]
 
