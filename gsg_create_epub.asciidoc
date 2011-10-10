@@ -27,7 +27,4 @@ Once you create an "_INDEX" file like this, you'll see a button called "Build Pr
 
 image::attachments/gsg_build_project.png[scaledwidth="90%"]
 
-
-
-
-from Once you've written your individual cunks of content, you  
+When you click the button, a new window open that will show you the status of the build as it runs.  Assuming all goes well, you'll receive an indicator that the build succeeded.  If not, you'll receive a link to the error log that will help you "debug" your project.
