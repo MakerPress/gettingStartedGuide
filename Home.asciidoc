@@ -10,7 +10,7 @@ So, why bother with this, you ask?  Mostly, we're trying to create a more appeal
 
 This document covers:
 
-* [[Signing in with OpenID | SigningInWithOpenID]]
+* [[Signing in with OpenID | gsg_authentication]]
 * [[Getting started with AsciiDoc | gsg_asciidoc_quickstart]]
 * [[Attaching figures and code samples | gsg_figures_and_code]]
 * [[Putting code examples on GitHub | gsg_code_samples]]
