@@ -6,7 +6,7 @@ The editing environment requires authentication using http://openid.net/[OpenID]
 https://www.google.com/accounts/o8/id
 
 
-image::attachments/gsg_openid_signing.png[scaledwidth="90%"]
+image::attachments/gsg_openid_signin.png[scaledwidth="90%"]
 
 
-image::attachments/gsg_google_signing.png[scaledwidth="90%"]
+image::attachments/gsg_google_signin.png[scaledwidth="90%"]
