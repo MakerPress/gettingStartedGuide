@@ -26,6 +26,6 @@ Enter your username and password and then click "Sign In."  Assuming you entered
 [[openid_in_footer]]
 .Once you're logged in, your OpenID will appear at the bottom of every page..
 
-image::attachmentsopenid_in_footer.png[scaledwidth="90%"]
+image::attachments/openid_in_footer.png[scaledwidth="90%"]
 
 Once your authenticated, you can start editing your project.
