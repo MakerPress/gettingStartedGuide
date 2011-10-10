@@ -3,7 +3,7 @@ To produce an EPUB or PDF, you must create a page that assembles the individual 
 * Have a name that ends with the string "_INDEX".  This tells the system that it's a special page used to build a final document.
 * Contain a bulleted list of files to include in the order in which they are to appear.  You reference each of these by page name, which you can find by clicking the "All Pages" button.  Note that you do not have to have an "include::" at the beginning, or a ".asciidoc[]" at the end.  These will be added automatically.
 
-Here, for example, are the contents of gsg_INDEX which lists all the files that should be included in this guide:
+Here, for example, are the contents of gsg_INDEX, which lists all the files that should be included in this guide:
 
 ----
 * gsg
