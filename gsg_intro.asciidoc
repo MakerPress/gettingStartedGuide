@@ -1,5 +1,7 @@
 = Getting Started with Gollum
 
+== Introduction
+
 This is a pilot for an experimental way to develop short-form (less than 100 pages or so) content for O'Reilly.  Here's how it works:
 
 * We supply you with a https://github.com/github/gollum[Gollum] instance, the awesome, git-powered wiki from the folks at http://www.github.com[GitHub].  You write/edit your document like you would a wiki, and you can share it with friends, editors, and other people you think might help.
