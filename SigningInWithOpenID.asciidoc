@@ -16,7 +16,16 @@ image::attachments/gsg_openid_signin.png[scaledwidth="90%"]
 
 To begin the authentication process, enter "*https://www.google.com/accounts/o8/id*" into the "Identity URL" box and press "Log In."  You will be redirected to the sign in page for your Google Account, as shown in <<google_signin>>. 
 
+[[google_signin]]
+.The OpenID form redirects you to the login page for Google Accounts, where you can enter your Google+ login credentials.
+
 image::attachments/gsg_google_signin.png[scaledwidth="90%"]
 
 Enter your username and password and then click "Sign In."  Assuming you entered everything correctly, you'll see the "Home" page of your editing environment.  You'll find your OpenID listed at the page footer, as shown in <<openid_in_footer>>.
 
+[[openid_in_footer]]
+.Once you're logged in, your OpenID will appear at the bottom of every page..
+
+image::attachmentsopenid_in_footer.png[scaledwidth="90%"]
+
+Once your authenticated, you can start editing your project.
