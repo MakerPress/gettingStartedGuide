@@ -8,7 +8,7 @@ To produce an EPUB or PDF, you must create a page that assembles the individual 
 The "All pages" button is a quick way to get list of all the pages in your project.  You can use cut-and-paste to quickly create an _INDEX file, and then put them in the correct order.  
 ====
 
-Here, for example, are the contents of gsg_INDEX, which lists all the files that should be included in this guide:
+Here, for example, are the contents of gsg_INDEX, which lists all the pages in this guide:
 
 ----
 * gsg
