@@ -4,7 +4,7 @@ The editing environment requires authentication using http://openid.net/[OpenID]
 
 [NOTE]
 ====
-Unlike other providers, Google+ does not require you to provide a distinct identifier.  Rather, you use a single, generic identifier -- https://www.google.com/accounts/o8/id -- which Google+ uses to retrieve your unique OpenID.  Please note that this identifier is not specific to your account, and that you do not need to replace "id" (or anything else) with anything specific to your account.  This is all done for you automatically.
+Unlike other providers, Google+ does not require you to provide a distinct identifier.  Rather, you use a single, generic identifier -- *https://www.google.com/accounts/o8/id* -- which Google+ uses to retrieve your unique identity URL.  Please note that this identifier is not specific to your account, and that you do not need to replace "id" (or anything else) with anything specific to your account.  This is all done for you automatically.
 ====
 
 <<open_id>> shows the authentication screen you'll receive each time you are required to log into the system.  
@@ -14,6 +14,8 @@ Unlike other providers, Google+ does not require you to provide a distinct ident
 
 image::attachments/gsg_openid_signin.png[scaledwidth="90%"]
 
-To begin the authentication process, enter the following text into the  
+To begin the authentication process, enter "https://www.google.com/accounts/o8/id" into the "Identity URL" box.  Please enter the text exactly as given.
+
+
 
 image::attachments/gsg_google_signin.png[scaledwidth="90%"]
