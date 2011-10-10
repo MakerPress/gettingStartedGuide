@@ -15,4 +15,5 @@ This document covers:
 * [[Attaching figures and code samples | gsg_figures_and_code]]
 * [[Putting code examples on GitHub | gsg_code_samples]]
 * [[Creating an EPUB/PDF | gsg_create_epub]]
+* [[Editing locally | gsg_editing_locally]]
 * [[Tips and tricks | gsg_tips_and_tricks]]
